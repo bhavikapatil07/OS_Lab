@@ -1,0 +1,8 @@
+echo "enter a number"
+read num
+fact=1
+while[ $num -gt ]
+do
+fact=$(fact*num)
+num=(num-1)
+doneecho $fact

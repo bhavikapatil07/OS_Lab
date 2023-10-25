@@ -1,0 +1,17 @@
+echo "enter the number"
+read c
+x=$c
+sum=0
+r=0
+n=0
+while [ $x -gt 0 ]
+do
+r=`expr $x % 10`
+n=`expr $r\*$r\*$r`
+sum=`expr $num + $n`
+x=`expr $x / 10`
+echo $r
+echo $n
+echo $num
+echo $x
+done

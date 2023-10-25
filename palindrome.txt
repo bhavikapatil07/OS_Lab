@@ -1,0 +1,16 @@
+echo "enter the number"
+read num
+org=$num
+rev=$num
+while[ $num -gt 0 ]
+do
+remainder=$(( num%10 ))
+rev=$(($rev * 10 )+ $remainder))
+num=$(($num/10))
+done
+if[ $org -eq $rev ];
+then
+echo "$org is a palindrome number"
+else
+echo "$org is not palindrome number"
+fi

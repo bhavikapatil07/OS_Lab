@@ -1,0 +1,9 @@
+echo -n "Enter name of the user:"
+read user
+c=$(who | grep -ci $user)
+if [ $c -gt 0 ]
+then
+echo "user is logged into the system"
+echo "hello"
+echo "user is not  logged into the system"
+fi

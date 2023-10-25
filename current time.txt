@@ -1,0 +1,16 @@
+#!/bin/bash
+current_time=$(date +"%H:%M")
+echo "Todays date is $current_time"
+
+hour=${current_time:0:2}
+if(hour>=5&&hour<12);then
+echo "Good morning"
+elif(hour>=12&&hour<18);then
+echo "Good afternoon"
+elif(hour>=18&&hour<22);then
+echo "Good evening"
+else
+echo "Good night"
+fi
+
+

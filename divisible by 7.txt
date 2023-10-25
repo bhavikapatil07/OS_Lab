@@ -1,0 +1,13 @@
+echo "enter the number"
+read n
+c='expr $n % 7'
+if [ $c -eq 0 ]
+then 
+echo "$n is divisible by 7"
+else
+echo "$n is not divisible by 7"
+n1=`expr $n - $c`
+n2=`expr $n - $c + 7`
+echo "previous number which is divisible by 7" is $n1
+echo "next number which is divisible by 7 is "n2
+fi
